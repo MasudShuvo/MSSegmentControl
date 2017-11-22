@@ -66,8 +66,6 @@
     }
     __block float buttonsXPosition = INITIAL_PADDING;
     __block float buttonWidth = (self.frame.size.width - (INITIAL_PADDING * 2) - GAP_WIDTH * (_buttonArray.count - 1)) / _buttonArray.count;
-    float a = (INITIAL_PADDING * 2);
-    float b = GAP_WIDTH * (_buttonArray.count - 1);
     
     [_buttonArray enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         UIButton *segmentButton = (UIButton *)obj;
